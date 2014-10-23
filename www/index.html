@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <script src="angular.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div ng-controller="myController" style="margin-top: 20px;">
+    <div>{{message|uppercase}}</div>
+    <div>Name: <input type="text" ng-model="myName"></div>
+    <div>Your name is: <span ng-bind="myName"></span></div>
+  </div>
+</body>
+</html>
